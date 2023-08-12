@@ -129,6 +129,13 @@ function makingFloors() {
 
         //<div class="hrfloorName"></div> is append in this div <div class="box"></div>
         floordiv.appendChild(hrdiv);
+        if (i==floorInput){
+            button1.style.display = 'none';
+        }
+        if (i==1){
+            button2.style.display = 'none';
+        }
+
 
         //<div class="box"></div>  is append in this div <div class="secondPage"></div>
         document.querySelector('.secondPage').appendChild(floordiv);
