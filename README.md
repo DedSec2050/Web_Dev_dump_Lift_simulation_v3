@@ -1,6 +1,6 @@
 # Web_Dev_dump_Lift_simulation_v3
 
-[Link: https://Lift Sim v3/](https://ded-lift-sim-v3-1660.netlify.app)
+[Link: [https://Lift Sim v3/](https://ded-lift-sim-v3-1660.netlify.app)](https://ded-lift-sim-v3-1660.netlify.app)
 
 ## Preview
 ![image](https://github.com/DedSec2050/Web_Dev_dump_Lift_simulation_v3/assets/119126965/8b5d7b39-abbd-4deb-a44c-90ac1aa4c082)
