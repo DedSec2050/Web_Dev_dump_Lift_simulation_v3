@@ -39,7 +39,6 @@ function hideSecondPage() {
 
 }
 
-//Now Lets create a floor 
 
 /* <div class="box">
 <div class="buttonLift">
