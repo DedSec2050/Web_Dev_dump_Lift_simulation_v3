@@ -303,7 +303,7 @@ function moveLift(liftno, floorNo,oldFloorValue) {
         gateopenclose(liftno);
         setTimeout(() =>{
             liftno.setAttribute('flag', 'free')
-        },3000);
+        },3500);
         console.log(liftno.getAttribute('flag'))
     }, 2 * Math.abs(floorNo - oldFloorValue) * 1000)
 

@@ -148,7 +148,7 @@ label{
     height: 60px;
     margin: 1px;
     background-color:#212529;
-    transition: width 2.5s ease-in-out;
+    transition: width 1.5s ease-in-out;
 }
 .gate1-move{
     transform: translateX(-100%);
