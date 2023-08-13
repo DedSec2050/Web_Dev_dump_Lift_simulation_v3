@@ -88,7 +88,6 @@ function makingFloors() {
         button1.setAttribute('id', `up${i}`);
         button1.appendChild(text1);
 
-        // select krh rha hu button id
 
         //button2 create 
         // <button class="down" id="down1">Down</button>
@@ -263,7 +262,7 @@ function makingFloors() {
     })
 
 
-    //same steps like above we do in up button now we are going to do in down buttons 
+    
     down.forEach((e, i) => {
         e.addEventListener('click', () => {
             let floorValue = nUp - i;
@@ -292,10 +291,9 @@ function moveLift(liftno, floorNo,oldFloorValue) {
         liftno.style.transform = `translateY(${-93 * (floorNo - 1)}px)`;
     
 
-    // add styling transition-duration to particular lift i.e. we do this because Lift moving at 2s per floor 
-    let prev= `${2 * Math.abs(floorNo - oldFloorValue)}s`
+    // add styling transition-duration to particular lift i.e. we do this because Lift moving at 1s per floor
+    let prev= `${ Math.abs(floorNo - oldFloorValue)}s`
     liftno.style.transitionDuration = prev;
-    // console.log('snjh',2*(floorNo -oldFloorValue));
 
 
     setTimeout(() => {
@@ -305,7 +303,7 @@ function moveLift(liftno, floorNo,oldFloorValue) {
             liftno.setAttribute('flag', 'free')
         },3500);
         console.log(liftno.getAttribute('flag'))
-    }, 2 * Math.abs(floorNo - oldFloorValue) * 1000)
+    },  Math.abs(floorNo - oldFloorValue) * 1000)
 
 } 
 

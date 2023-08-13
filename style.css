@@ -31,10 +31,6 @@
     margin-bottom: 1rem;
 }
 
-label,
-input {
-  font-family: var(--font-secondary);
-}
 
 label{
     margin-left: 20%;
