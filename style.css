@@ -1,8 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: #767c81;
 }
-
+.lift-sim_input::placeholder{
+    color: #b6adad;
+}
   /* <div class="firstPage"> */
 .firstPage{
   display: flex;
@@ -31,6 +34,29 @@
     margin-bottom: 1rem;
 }
 
+@property --color-1 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(66, 20, 20);
+}
+@property --color-2 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(50, 50, 173);
+}
+.goToFirstPage{
+    --color-1: rgb(66, 20, 20);
+    --color-2: rgb(53, 53, 168);
+    border-radius: 3px;
+    background-image: linear-gradient(50deg, var(--color-1),var(--color-2));
+    transition:
+     --color-1 1000ms, --color-2 1000ms 500ms;
+}
+.goToFirstPage:hover{
+    --color-1: rgb(45, 45, 128);
+    --color-2: rgb(66, 20, 20);
+}
+
 
 label{
     margin-left: 20%;
@@ -45,6 +71,7 @@ label{
     min-width: 250px;
     border: 2px solid #dddddd;
     transition: 0.4s ease;
+    
   }
 
 .lift-sim_input:focus {
@@ -98,26 +125,49 @@ label{
  .button button{
     margin: 2px;
  }
-.up{
-    font-size: 13px;
-    border-radius: 4px;
-    transition-duration: 0.4s;
-    background-color: white;
-    color: #212529;
+ @property --color-1{
+     syntax: "<color>";
+     inherits: true;
+     initial-value: red;
+    }
+    @property --color-2{
+        syntax: "<color>";
+        inherits: true;
+        initial-value: blue;
+    }
+    .up{
+        font-size: 13px;
+        border-radius: 4px;
+        transition-duration: 0.4s;
+        /* color: #212529; */
+        --color-1: red;
+        --color-2: blue;
+        color: #fff;
+        background-image: linear-gradient(90deg, var(--color-1), var(--color-2));
+        transition: 
+        --color-1 1000ms, --color-2 1000ms 500ms;
 }
 .down{
     font-size: 13px;
     border-radius: 4px;
     transition-duration: 0.4s;
-    background-color: white;
-    color: #212529;
+    --color-1: red;
+        --color-2: blue;
+        color: #fff;
+        background-image: linear-gradient(60deg, var(--color-1), var(--color-2));
+        transition: 
+        --color-1 1000ms, --color-2 1000ms 500ms;
 }
 .up:hover{
-    background-color: black;
+    /* background-color: black; */
+    --color-1: blue;
+    --color-2: red;
     color: white;
 }
 .down:hover{
-    background-color: black;
+    /* background-color: black; */
+    --color-1: blue;
+    --color-2: red;
     color: white;
 }
 
