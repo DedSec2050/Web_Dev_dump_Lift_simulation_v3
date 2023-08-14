@@ -242,6 +242,10 @@ function makingFloors() {
 
             //create floorValue for calculation purpose
             let floorValue = nUp - i;
+            if (oldFloorValueArray.includes(floorValue)){
+                console.log(`Lift already on Floor ${floorValue}`);
+                return;
+            }
             for (let i = 0; i < selectAllLift.length; i++) {
                 // console.log(selectAllLift)
 
@@ -266,6 +270,9 @@ function makingFloors() {
     down.forEach((e, i) => {
         e.addEventListener('click', () => {
             let floorValue = nUp - i;
+            if (oldFloorValueArray.includes(floorValue)){
+                return;
+            }
             for (let i = 0; i < selectAllLift.length; i++) {
                 // console.log(selectAllLift)
                 if (selectAllLift[i].getAttribute('flag') === 'free') {
