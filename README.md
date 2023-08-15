@@ -3,10 +3,10 @@
 [Link: https://ded-lift-sim-v3-1660.netlify.app](https://ded-lift-sim-v3-1660.netlify.app)
 
 ## Preview
-![image](https://github.com/DedSec2050/Web_Dev_dump_Lift_simulation_v3/assets/119126965/8b5d7b39-abbd-4deb-a44c-90ac1aa4c082)
+![image](https://github.com/DedSec2050/Web_Dev_dump_Lift_simulation_v3/assets/119126965/bf21a087-711a-4bc0-bba3-defe60315732)
 
 ## Simulation Page
-![image](https://github.com/DedSec2050/Web_Dev_dump_Lift_simulation_v3/assets/119126965/7030c779-8754-467d-b17e-f10c50a718f9)
+![image](https://github.com/DedSec2050/Web_Dev_dump_Lift_simulation_v3/assets/119126965/a78ff9f6-49a9-46bf-aab7-c2414c8a88d8)
 
 ## ADD-ONs
 ### Added a feature to dynamically generate floors.
